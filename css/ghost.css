@@ -1,0 +1,187 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #90c0f1;
+}
+#img {
+	height: 260px;
+	margin: 140px auto;
+}
+#ghost {
+	overflow: hidden;
+	/*清除浮动*/
+	
+	animation: moveanimate 1s infinite alternate;
+	-moz-animation: moveanimate 1s infinite alternate;
+	-webkit-animation: moveanimate 1s infinite alternate;
+	-ms-animation: moveanimate 1s infinite alternate;
+}
+#img,
+#ghost,
+#halfcircle,
+#rect,
+#shadow {
+	width: 140px;
+}
+#img,
+#ghost {
+	position: relative;
+}
+#halfcircle,
+#rect,
+.smallcircle {
+	background-color: white;
+}
+#halfcircle {
+	height: 140px;
+	border-radius: 70px;
+	-webkit-border-radius: 70px;
+	-moz-border-radius: 70px;
+}
+#rect {
+	margin-top: -70px;
+	height: 120px;
+}
+.smallcircle {
+	width: 28px;
+	height: 28px;
+	border-radius: 14px;
+	-webkit-border-radius: 14px;
+	-moz-border-radius: 14px;
+	float: left;
+	margin-top: -14px;
+}
+.eye,
+.mouth {
+	width: 15px;
+	height: 19px;
+	border: 2px solid #343333;
+	position: absolute;
+}
+.left {
+	top: 65px;
+	left: 40px;
+}
+.right {
+	top: 65px;
+	left: 90px;
+}
+.mouth {
+	top: 110px;
+	left: 65px;
+}
+.innereye {
+	width: 13px;
+	height: 15px;
+	background-color: #424242;
+	position: absolute;
+}
+.leftin {
+	top: 68px;
+	left: 40px;
+}
+.rightin {
+	top: 68px;
+	left: 90px;
+}
+#shadow {
+	position: absolute;
+	bottom: 10px;
+	height: 20px;
+	background-color: #808080;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+	animation: shadowanimate 1s infinite alternate;
+}
+.eye,
+.mouth,
+.innereye,
+#shadow {
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+@keyframes moveanimate {
+	from {
+		top: 0px;
+	}
+	to {
+		top: -30px;
+	}
+}
+@-moz-keyframes moveanimate {
+	from {
+		top: 0px;
+	}
+	to {
+		top: -30px;
+	}
+}
+@-ms-keyframes moveanimate {
+	from {
+		top: 0px;
+	}
+	to {
+		top: -30px;
+	}
+}
+@-webkit-keyframes moveanimate {
+	from {
+		top: 0px;
+	}
+	to {
+		top: -30px;
+	}
+}
+@keyframes shadowanimate {
+	from {
+		height: 20px;
+		opacity: 1.0;
+		filter: alpha(opacity=100);
+	}
+	to {
+		height: 10px;
+		opacity: 0.5;
+		filter: alpha(opacity=50);
+	}
+}
+@-moz-keyframes shadowanimate {
+	from {
+		height: 20px;
+		opacity: 1.0;
+		filter: alpha(opacity=100);
+	}
+	to {
+		height: 10px;
+		opacity: 0.5;
+		filter: alpha(opacity=50);
+	}
+}
+@-ms-keyframes shadowanimate {
+	from {
+		height: 20px;
+		opacity: 1.0;
+		filter: alpha(opacity=100);
+	}
+	to {
+		height: 10px;
+		opacity: 0.5;
+		filter: alpha(opacity=50);
+	}
+}
+@-webkit-keyframes shadowanimate {
+	from {
+		height: 20px;
+		opacity: 1.0;
+		filter: alpha(opacity=100);
+	}
+	to {
+		height: 10px;
+		opacity: 0.5;
+		filter: alpha(opacity=50);
+	}
+}
